@@ -4,6 +4,12 @@ const $cardCatarina = $('#catarina');
 const $cardInes = $('#ines');
 const $cardSara = $('#sara');
 
+// select and apply animate animation to header
+$('.header').addClass('animated bounceIn');
+
+// select and apply animate animation to img
+$('.card-img-top').addClass('animated bounce');
+
 // user anniversaries in milliseconds
 const persons = {
     paulo: {
@@ -16,7 +22,7 @@ const persons = {
         id: 'catarina',
         fullName: 'Catarina Lopes',
         date: '25 Fevereiro',
-        bDay: new Date('Feb 25, 2019 00:00:00').getTime()
+        bDay: new Date('Feb 25, 2019 13:15:00').getTime()
     },
     ines: {
         id: 'ines',
