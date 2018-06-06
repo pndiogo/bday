@@ -7,8 +7,14 @@ const $cardSara = $('#sara');
 // select and apply animate animation to header
 $('.header').addClass('animated bounceIn');
 
-// select and apply animate animation to img
-$('.card-img-top').addClass('animated bounce');
+// select and apply animate animation to card img
+$('.card-img-top').each(function(index) {        
+    var that = this;
+    var t = setTimeout(function() { 
+        console.log(that);
+        $(that).addClass('animated bounce'); 
+    }, 225 * index);        
+});
 
 // user anniversaries in milliseconds
 const persons = {
