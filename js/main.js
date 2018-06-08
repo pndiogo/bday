@@ -96,7 +96,7 @@ const intvl = setInterval(() => {
             clearInterval(intvl);
             // style and output text
             countdown.style.color = '#17a2b8';
-            countdown.innerHTML = 'Parabéns!';
+            countdown.innerHTML = 'Happy birthday!';
         }
     }
     // loop to update time each second on every user
