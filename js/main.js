@@ -1,9 +1,3 @@
-// card selections
-const $cardPaul = $('#paul');
-const $cardCat = $('#cat');
-const $cardMaddie = $('#maddie');
-const $cardSarah = $('#sarah');
-
 // select and apply animate animation to header
 $('.header').addClass('animated bounceIn');
 
