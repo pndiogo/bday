@@ -1,8 +1,8 @@
 // card selections
-const $cardPaulo = $('#paulo');
-const $cardCatarina = $('#catarina');
-const $cardInes = $('#ines');
-const $cardSara = $('#sara');
+const $cardPaul = $('#paul');
+const $cardCat = $('#cat');
+const $cardMaddie = $('#maddie');
+const $cardSarah = $('#sarah');
 
 // select and apply animate animation to header
 $('.header').addClass('animated bounceIn');
@@ -10,36 +10,35 @@ $('.header').addClass('animated bounceIn');
 // select and apply animate animation to card img
 $('.card-img-top').each(function(index) {        
     var that = this;
-    var t = setTimeout(function() { 
-        console.log(that);
+    var t = setTimeout(function() {
         $(that).addClass('animated bounce'); 
     }, 225 * index);        
 });
 
 // user anniversaries in milliseconds
 const persons = {
-    paulo: {
-        id: 'paulo',
-        fullName: 'Paulo Diogo',
-        date: '15 Fevereiro',
+    paul: {
+        id: 'paul',
+        fullName: 'Paul',
+        date: 'February 15',
         bDay: new Date('Feb 15, 2019 16:30:00').getTime(),
     },
     catarina: {
-        id: 'catarina',
-        fullName: 'Catarina Lopes',
-        date: '25 Fevereiro',
+        id: 'cat',
+        fullName: 'Cat',
+        date: 'February 25',
         bDay: new Date('Feb 25, 2019 13:15:00').getTime()
     },
     ines: {
-        id: 'ines',
-        fullName: 'Inês Diogo',
-        date: '5 Julho',
+        id: 'maddie',
+        fullName: 'Maddie',
+        date: 'July 5',
         bDay: new Date('Jul 5, 2018 18:18:00').getTime()
     },
     sara: {
-        id: 'sara',
-        fullName: 'Sara Diogo',
-        date: '30 Setembro',
+        id: 'sarah',
+        fullName: 'Sarah',
+        date: 'September 30',
         bDay: new Date('Sep 30, 2018 05:55:00').getTime()
     },
     insertNameAndDate: (user) => {
@@ -52,11 +51,12 @@ const persons = {
     }
 }
 
-// function invocations to add names and birthday date
-persons.insertNameAndDate(persons.paulo);
-persons.insertNameAndDate(persons.catarina);
-persons.insertNameAndDate(persons.ines);
-persons.insertNameAndDate(persons.sara);
+// loop to add names and birthday date from object
+for (var key in persons) {
+	if (persons.hasOwnProperty(key)) {
+        persons.insertNameAndDate(persons[key]);
+	}
+}
 
 // update every second
 const intvl = setInterval(() => {
@@ -99,8 +99,10 @@ const intvl = setInterval(() => {
             countdown.innerHTML = 'Parabéns!';
         }
     }
-    dateCalculations(persons.paulo);
-    dateCalculations(persons.catarina);
-    dateCalculations(persons.ines);
-    dateCalculations(persons.sara);
+    // loop to update time each second on every user
+    for (var key in persons) {
+        if (persons.hasOwnProperty(key)) {
+            dateCalculations(persons[key]);
+        }
+    }
 }, 1000);
