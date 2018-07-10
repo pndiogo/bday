@@ -24,10 +24,10 @@ const persons = {
         bDay: new Date('Feb 25, 2019 13:15:00').getTime()
     },
     ines: {
-        id: 'maddie',
-        fullName: 'Maddie',
+        id: 'agnes',
+        fullName: 'Agnes',
         date: 'July 5',
-        bDay: new Date('Jul 5, 2018 18:18:00').getTime()
+        bDay: new Date('Jul 5, 2019 18:18:00').getTime()
     },
     sara: {
         id: 'sarah',
