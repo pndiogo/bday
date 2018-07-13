@@ -10,6 +10,14 @@ Birthday Countdown Calculator 1.
 
 Online tool that calculates time missing for next birthday for some of my close family members. Static content.
 
+## Related Projects
+
+* **Birthday Countdown Calculator 2** - [bday2](https://pndiogo.github.io/bday2/)
+Birthday Countdown Calculator 2 with persistent users and asynchronous callbacks.
+
+* **Birthday Countdown Calculator 3** - [bday3](https://pndiogo.github.io/bday3/)
+Birthday Countdown Calculator 3 with persistent users. With promises and fetch API.
+
 ## Built With
 
 * HTML5
