@@ -1,6 +1,8 @@
+![Bday3Screenshot](img/bday1-screenshot-1.png)
+
 # Project Title
 
-Birthday Countdown Calculator 1.
+Birthday Countdown Calculator 1
 
 ## Demo
 
@@ -12,28 +14,28 @@ Online tool that calculates time missing for next birthday for some of my close 
 
 ## Related Projects
 
-* **Birthday Countdown Calculator 2** - [bday2](https://github.com/pndiogo/bday2)
+- **Birthday Countdown Calculator 2** - [bday2](https://github.com/pndiogo/bday2)
 
 Birthday Countdown Calculator 2 with persistent users and asynchronous callbacks.
 
-* **Birthday Countdown Calculator 3** - [bday3](https://github.com/pndiogo/bday3)
+- **Birthday Countdown Calculator 3** - [bday3](https://github.com/pndiogo/bday3)
 
 Birthday Countdown Calculator 3 with persistent users. With promises and fetch API.
 
 ## Built With
 
-* HTML5
-* CSS3
-* JS
-* jQuery
-* Bootstrap 4
-* Animate CSS
-* Git
-* Npm
+- HTML5
+- CSS3
+- JS
+- jQuery
+- Bootstrap 4
+- Animate CSS
+- Git
+- Npm
 
 ## Authors
 
-* **Paulo Diogo** - [pndiogo](https://github.com/pndiogo)
+- **Paulo Diogo** - [pndiogo](https://github.com/pndiogo)
 
 ## License
 
